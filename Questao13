@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+    // Declaração de variaveis
+int idade, genero;
+int c=0;
+    
+    //Cria o Loop
+    for (int i = 0; i < 10; i++) {
+
+    // Solicita entrada de dados ao usuario  
+    System.out.println("Insira a idade: ");
+    idade = Entrada.nextInt();
+    System.out.println("Informe o genero: \n1 - Masculino \n2 - Feminino ");
+    genero = Entrada.nextInt();
+
+    // Soma mais 1 ao controle quando estiver dentro da condição estabelecida
+      if (idade>= 20 && idade <=40 && genero == 2) {
+      c++;
+        }
+      }
+    //Imprime para o usuario resultado
+    System.out.println("Número de mulheres com idade entre 20 e 40 anos: " + c);
+  }
+}
