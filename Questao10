@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+//Declaração de Variaveis    
+    double n, v, z;
+//Solicitação de entrada para usuario
+ System.out.println("Insira o número: ");
+      n = Entrada.nextDouble();
+//Variavel V recebe N e Z recebe N - 1
+      v = n;
+      z = n--;
+
+// Se valor informado for negativo imprime que não existe fatorial
+if (n<0){
+System.out.println("Não existe fatorial para números negativos");
+}
+// Se valor informado for Zero ou Um imprime que fatorial é igual a Um
+else if (n==0 || n==1){
+System.out.println("O fatorial é 1.");
+}
+// Caso contrario efetua o calculo
+else{   
+for (int i = 0; i < z; i++){
+while(n>0){   
+n--;
+v = v * (n); 
+break;}
+}
+// Imprime resultado para o usuario
+System.out.println("O fatorial para este número é: " +v);
+}
+}
+}
