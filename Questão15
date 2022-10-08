@@ -1,0 +1,25 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+    // Declaração de variaveis
+    int a1, b1, media;
+
+    // Cria o Loop e solicita a entrada de dados pelo Usuario
+    for (int i = 0; i < 3; i++) {
+      System.out.println("Insira a Primeira nota do Aluno: ");
+      a1 = Entrada.nextInt();
+      System.out.println("Insira a Segunda nota do Aluno: ");
+      b1 = Entrada.nextInt();
+
+      // Efetua o calculo da média
+      media = (a1 + b1) / 2;
+
+      // Imprime para o usuario a media de cada aluno conforme insere as duas notas
+      System.out.println("A média para este aluno é: " + media);
+
+    }
+  }
+}
