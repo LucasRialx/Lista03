@@ -1,0 +1,25 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+    //Declaração de variaveis
+    double num, pot, controle;
+    //Solicita entrada de dados ao usuario
+    System.out.println("Insira o número inteiro: ");
+    num = Entrada.nextDouble();
+    System.out.println("Insira a potência para o número: ");
+    pot = Entrada.nextDouble();
+// Controle recebe valor da variavel num
+    controle = num;
+//Cria loop e efetua o calculo
+    for (int i = 1; i < pot; i++) {
+
+      controle = controle * num;
+    }
+
+    //Imprime resultado para o usuario
+    System.out.println("Resultado da potência: " + controle);
+  }
+}
