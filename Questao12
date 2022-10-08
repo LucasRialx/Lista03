@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+    // Declaração de variaveis
+    double num, ctrl, x;
+    // Solicita entrada de dados ao usuario
+    System.out.println("Insira um número: ");
+    num = Entrada.nextDouble();
+    x = num;
+    
+    //Cria o Loop e efetua a divisão com restos
+    for (int i = 1; i <= x; i++) {
+
+      ctrl = num % 2;
+      num--;
+      
+//Caso o resto seja = 1 imprime os números pares para o usuario
+      if (ctrl == 1) {
+        System.out.println("Número par: " + num);
+      
+      }
+    }
+  }
+}
