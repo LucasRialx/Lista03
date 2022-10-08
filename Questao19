@@ -1,0 +1,24 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada;
+    entrada = new Scanner(System.in);
+
+    double vI ,v, t ,h,vezes,i;
+
+  
+    System.out.print("Informe a velocidade inicial:");
+    vI = entrada.nextDouble();
+        System.out.print("Informe a altura:");
+    t = entrada.nextDouble();
+    System.out.println("t (s) \t\t h(t) (m) \t\t v(t) (m/s)");
+
+      vezes = 2/0.1;
+    
+    for (i = 0; i < vezes; i++)
+      v = vI - 10 * t;
+      h = vI * t - (10 * Math.pow(t, 2))/ 2;
+      System.out.format("%.2f \t\t %2f \n", t, h);
+  }
+}
