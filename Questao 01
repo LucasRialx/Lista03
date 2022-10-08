@@ -1,0 +1,25 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+    int numero;
+    int maior = Integer.MIN_VALUE;
+    int menor = Integer.MAX_VALUE;
+
+    for (int i = 0; i < 10; i++) {
+      System.out.println("Insira o número: ");
+      numero = Entrada.nextInt();
+
+      if (numero >= maior) {
+        maior = numero;
+      }
+      if (numero <= menor) {
+        menor = numero;
+      }
+    }
+    System.out.println("Maior número: " + maior);
+    System.out.println("Menor número: " + menor);
+
+  }
+}
