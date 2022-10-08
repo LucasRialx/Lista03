@@ -1,0 +1,33 @@
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner Entrada = new Scanner(System.in);
+
+    // Declaração de variaveis
+int peso, idade;
+int c1=0;
+int c2=0;
+    //Cria o Loop
+    for (int i = 0; i < 7; i++) {
+
+    // Solicita entrada de dados ao usuario  
+    System.out.println("Insira a idade: ");
+    idade = Entrada.nextInt();
+    System.out.println("Informe o peso em KG: ");
+    peso = Entrada.nextInt();
+
+    // Efetua condição para controlar o peso e idade solicitado
+      if(peso>90){
+      c1++;
+        }
+      if(idade!=0){
+      c2 =c2+idade;
+        }
+      }
+    //Recebe o valor acumulado da idade e calcula a média
+    c2 = c2/7;
+    //Imprime para o usuario resultado
+    System.out.println("Pessoas com o peso superior a 90KG:" +c1+ "\nA média das idades é: " +c2); 
+  }
+}
